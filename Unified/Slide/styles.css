@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(0, 0, 0)
+
+}
+
+.slider {
+    position: relative;
+    height: 50%;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: baseline;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 13%;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.prev, .next {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    margin-top: auto;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.nav-dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-dots .dot.active {
+    background-color: #474646;
+}
